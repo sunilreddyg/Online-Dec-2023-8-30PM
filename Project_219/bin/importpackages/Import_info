@@ -1,0 +1,52 @@
+
+
+
+1. Only public modifier classes, Methods, Variables can be used
+   outside package..
+   
+   //No Modifier    [Information only use full with in package]
+   class A
+   {
+   		int x=100;
+   		
+   		void m1()
+   		{
+   		
+   		}
+   		
+   }
+   
+   
+   //Public Modifier   [public modifier information can use outside the package]
+   
+   public class B
+   {
+   		public int x=200;
+   		public void m2()
+   		{
+   				
+   		}
+   
+   
+   }
+   
+   
+   ==================================================================
+   Note:--> In order to use other package class information into current class
+   			We should import packages into current constructed class.
+   			
+   			Syntax:-->
+   					=> Importing whole package into current class
+   							import packagename.*;
+   							
+   							
+   					=> Importing selected class into current class from different package
+   					        import packagename.classname;
+   					
+   
+   
+   
+   
+   
+   
+   
