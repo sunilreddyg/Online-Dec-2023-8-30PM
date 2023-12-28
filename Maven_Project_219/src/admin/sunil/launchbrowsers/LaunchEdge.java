@@ -2,13 +2,12 @@ package launchbrowsers;
 
 import org.openqa.selenium.edge.EdgeDriver;
 
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
-
 public class LaunchEdge {
 
 	public static void main(String[] args) 
 	{
-		
+		//Set the property only when selenium version lower than4.5
+		System.setProperty("webdriver.edge.driver", "E:\\browserdrivers\\msedgedriver.exe");
 		
 		//Launching edge driver
 		EdgeDriver edge=new EdgeDriver();
