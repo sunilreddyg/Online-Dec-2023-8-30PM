@@ -20,14 +20,23 @@ public class Example_Sendkeys {
 		//Clicking on Create new account button
 		driver.findElement(By.xpath("//a[contains(.,'Create new account')]")).click();
 
-		//Enter first name
-		driver.findElement(By.name("firstname")).sendKeys("Sunil");
-		
 		
 		driver.findElement(By.name("firstname"))
-		.sendKeys(Keys.TAB+"Reddy"+Keys.TAB+"sunil@gmail.com");
+		.sendKeys("Rahul"+Keys.TAB+"Shetty"+Keys.TAB+"9030248855"+Keys.TAB+"Hello");
+		
+		//Using keybaord shortcut select dropdown options
+		driver.findElement(By.id("day")).sendKeys("25");
+	
+		//Using keybaord shortcut keys selecting dropdown options
+		driver.findElement(By.id("month")).sendKeys(Keys.ARROW_DOWN,Keys.ARROW_DOWN);
+		//Note:--> Only multiple keybaord shortcut to use we should follow cama
+		
+		//Selecting Year dropdown option
+		driver.findElement(By.id("month")).sendKeys("1980");
 		
 		
+		//Selecting radio button using space bar [Keyboard]
+		driver.findElement(By.xpath("//input[@value='1']")).sendKeys(Keys.SPACE);
 		
 	}
 
