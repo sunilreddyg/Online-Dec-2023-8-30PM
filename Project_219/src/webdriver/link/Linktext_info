@@ -33,7 +33,7 @@ HtmlSource:-->
 
 		//Designing script to identify link at webpage using linkname..
 		driver.findElement(By.linktext("Forgot Account")).click();
-		driver.findElement(By.PartialLinktext("Forgot Account")).click();
+		driver.findElement(By.PartialLinktext("Forgot")).click();
 ================================================================
 HtmlSource:-->
 		<a href="http://findjob.com/newsearch"> 
